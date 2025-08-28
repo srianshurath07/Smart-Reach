@@ -1,0 +1,4 @@
+{
+  "101": {"name": "John Doe", "loyalty_tier": "Gold", "last_purchase": "2025-08-20", "engagement_score": 85},
+  "102": {"name": "Jane Roe", "loyalty_tier": "Silver", "last_purchase": "2025-07-12", "engagement_score": 42}
+}
