@@ -1,6 +1,0 @@
-user_id	step	timestamp
-101	email_open	2025-08-28T09:12:00
-101	click	2025-08-28T09:13:00
-102	email_open	2025-08-28T10:02:00
-103	email_open	2025-08-28T12:20:00
-103	purchase	2025-08-28T12:25:00
