@@ -13,7 +13,7 @@ st.markdown(
         padding: 1rem;
     }
     .css-18ni7ap .stButton button {
-        color: white;
+        color: black;
     }
     /* Remove top padding */
     .css-1d391kg {
@@ -44,7 +44,7 @@ st.markdown(
 st.markdown(
     """
     <div style="display:flex; justify-content: space-between; align-items:center;">
-        <h2 style="color:black;">SMART<span style='color:#7F5AF0;'>REACH</span></h2>
+        <h2 style="color:white;">SMART<span style='color:#7F5AF0;'>REACH</span></h2>
         <div>
             <button style='margin-right:10px;'>Dashboard</button>
             <button style='margin-right:10px;'>Campaigns</button>
