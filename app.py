@@ -62,24 +62,14 @@ st.markdown(
 st.markdown("## KEY METRICS")
 
 # --- DUMMY DATA (replace with your backend logic) ---
-metrics = [
-    {"label": "Total Campaigns", "value": "12", "desc": "Active"},
-    {"label": "Total Spend", "value": "$5400", "desc": "This Month"},
-    {"label": "Total Revenue", "value": "$12000", "desc": "This Month"},
-    {"label": "ROI", "value": "50%", "desc": "This Month"},
+metrics = [ 
+    {"label": "Total Campaigns", "value": "12", "desc": "Active"}, 
+    {"label": "Total Spend", "value": "$5400", "desc": "This Month"}, 
+    {"label": "Total Revenue", "value": "$12000", "desc": "This Month"}, 
+    {"label": "ROI", "value": "50%", "desc": "This Month"}, 
     {"label": "Total Campaigns", "value": "12", "desc": "Active"},
 ]
 
-for metric in metrics:
-    st.markdown(
-        f"""
-        <div style='color:white; font-size:18px; margin-bottom:10px;'>
-            <strong>{metric['label']}:</strong> {metric['value']}<br>
-            <span style='font-size:14px;'>{metric['desc']}</span>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
 
 
 # --- LAYOUT METRICS CARDS ---
