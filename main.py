@@ -31,11 +31,15 @@ app = FastAPI(title="Marketing Dashboard API")
 # CORS - allow your frontend during hackathon
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://smart-reach-4wxm4qpxz3buk7paivptbw.streamlit.app/"],
+    allow_origins=[
+        "https://smart-reach-4wxm4qpxz3buk7paivptbw.streamlit.app/",
+        "http://localhost:8501"
+    ],
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["Authorization", "Content-Type"],
 )
+
 
 # ---------- Data loaders ----------
 def load_engagement_df() -> pd.DataFrame:
@@ -189,3 +193,4 @@ def reload_data():
     exist_eng = os.path.exists(ENGAGEMENT_CSV)
     exist_users = os.path.exists(USERS_JSON)
     return {"engagement_csv": exist_eng, "users_json": exist_users}
+
