@@ -63,6 +63,7 @@ st.markdown("## KEY METRICS")
 
 # --- DUMMY DATA (replace with your backend logic) ---
 metrics = [ 
+    color: black;
     {"label": "Total Campaigns", "value": "12", "desc": "Active"}, 
     {"label": "Total Spend", "value": "$5400", "desc": "This Month"}, 
     {"label": "Total Revenue", "value": "$12000", "desc": "This Month"}, 
