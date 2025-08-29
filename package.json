@@ -1,3 +1,0 @@
-"scripts": {
-  "build": "vite build" // or whatever your framework uses
-}
