@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "event_id": { "type": "string" },
+    "event_type": { "type": "string" },
+    "occurred_at": { "type": "string", "format": "date-time" },
+    "ingested_at": { "type": "string", "format": "date-time" },
+    "session_id": { "type": "string" },
+    "customer_id": { "type": "string" },
+    "source": { "type": "string" },
+    "version": { "type": "string" },
+    "event_properties": { "type": "object" }
+  },
+  "required": [
+    "event_id", "event_type", "occurred_at", "ingested_at",
+    "session_id", "customer_id", "source", "version", "event_properties"
+  ],
+  "additionalProperties": false
+}
