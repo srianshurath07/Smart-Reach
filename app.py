@@ -69,18 +69,9 @@ metrics = [
     {"label": "ROI", "value": "50%", "desc": "This Month"}, 
     {"label": "Total Campaigns", "value": "12", "desc": "Active"},
 ]
-for metric in metrics:
-    st.markdown(
-        f"""
-        <div style='color:black; font-size:18px; margin-bottom:10px;'>
-            <strong>{metric['label']}:</strong> {metric['value']}<br>
-            <span style='font-size:14px;'>{metric['desc']}</span>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-
+<div>
+        <div style='color:black?
+</div>
 # --- LAYOUT METRICS CARDS ---
 cols = st.columns(3)
 
