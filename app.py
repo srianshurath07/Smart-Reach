@@ -73,7 +73,7 @@ metrics = [
 for metric in metrics:
     st.markdown(
         f"""
-        <div style='color:black; font-size:18px; margin-bottom:10px;'>
+        <div style='color:white; font-size:18px; margin-bottom:10px;'>
             <strong>{metric['label']}:</strong> {metric['value']}<br>
             <span style='font-size:14px;'>{metric['desc']}</span>
         </div>
