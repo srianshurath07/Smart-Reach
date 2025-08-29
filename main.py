@@ -31,7 +31,7 @@ app = FastAPI(title="Marketing Dashboard API")
 # CORS - allow your frontend during hackathon
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://smart-reach-4wxm4qpxz3buk7paivptbw.streamlit.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -198,3 +198,4 @@ from fastapi.responses import HTMLResponse
 @app.get("/", response_class=HTMLResponse)
 def home():
     return "<h2>🚀 Marketing Dashboard API is running!</h2><p>Try <code>/api/engagement</code> or <code>/api/user/{user_id}</code></p>"
+
