@@ -1,4 +1,4 @@
-# 🧠 Marketing Cockpit — AI-Powered Campaign Intelligence
+# 🧠 Smart Reach — AI-Powered Campaign Intelligence
 
 ## 🚀 Mission
 
