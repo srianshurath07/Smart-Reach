@@ -1,13 +1,7 @@
 services:
   - type: web
-    name: my-backend-service
+    name: smartreach-dashboard
     env: python
-    plan: free  # or 'starter', 'standard', etc.
     buildCommand: pip install -r requirements.txt
-    startCommand: python -m uvicorn main:app --host 0.0.0.0 --port 10000
-    autoDeploy: true
-    envVars:
-      - key: ENV
-        value: production
-      - key: SECRET_KEY
-        value: your-secret-key
+    startCommand: streamlit run main.py --server.port=10000 --server.address=0.0.0.0
+    plan: free
