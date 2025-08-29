@@ -193,4 +193,3 @@ def reload_data():
     exist_eng = os.path.exists(ENGAGEMENT_CSV)
     exist_users = os.path.exists(USERS_JSON)
     return {"engagement_csv": exist_eng, "users_json": exist_users}
-
