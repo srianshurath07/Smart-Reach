@@ -188,4 +188,13 @@ def reload_data():
     # intentionally simple: checks files exist
     exist_eng = os.path.exists(ENGAGEMENT_CSV)
     exist_users = os.path.exists(USERS_JSON)
+
     return {"engagement_csv": exist_eng, "users_json": exist_users}
+
+# Root route to avoid 404 on "/"
+
+from fastapi.responses import HTMLResponse
+
+@app.get("/", response_class=HTMLResponse)
+def home():
+    return "<h2>🚀 Marketing Dashboard API is running!</h2><p>Try <code>/api/engagement</code> or <code>/api/user/{user_id}</code></p>"
