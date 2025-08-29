@@ -69,9 +69,7 @@ metrics = [
     {"label": "ROI", "value": "50%", "desc": "This Month"}, 
     {"label": "Total Campaigns", "value": "12", "desc": "Active"},
 ]
-<div>
-        <div style='color:black?
-</div>
+
 # --- LAYOUT METRICS CARDS ---
 cols = st.columns(3)
 
