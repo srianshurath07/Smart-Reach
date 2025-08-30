@@ -1,3 +1,6 @@
-﻿streamlit
+fastapi
+uvicorn
+pydantic
 pandas
-plotly
+openai
+python-dotenv
