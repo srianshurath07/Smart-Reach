@@ -9,8 +9,8 @@ services:
     envVars:
       - key: ENV
         value: production
-      - key: SECRET_KEY
-        value: your-secret-key
+      - key: OPENAI_API_KEY
+        value: AIzaSyCZI1OSVv5ecX7bKcxMP4WrSKewrKvZPNo
 
   - type: web
     name: smartreach-dashboard
@@ -18,3 +18,4 @@ services:
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run main.py --server.port=10001 --server.address=0.0.0.0
+
