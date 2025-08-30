@@ -148,5 +148,3 @@ for i, metric in enumerate(metrics):
 
 # --- ADDITIONAL SPACING ---
 st.markdown("<br><br>", unsafe_allow_html=True)
-
-
