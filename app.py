@@ -1,6 +1,24 @@
 import streamlit as st
 import requests
 
+@st.cache_data
+def get_recommendation(user_id):
+    url = f"{BACKEND_URL}/recommend"
+    response = requests.get(url, params={"user_id": user_id})
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return {"error": f"API Error: {response.status_code}"}
+
+if st.button("Get Recommendations"):
+    with st.spinner("Fetching recommendation..."):
+        data = get_recommendation(user_id)
+        if "error" in data:
+            st.error(data["error"])
+        else:
+            st.success(data["nba"]["recommendation"])
+
+
 st.set_page_config(page_title="Marketing Dashboard", layout="wide")
 
 # Sidebar for navigation
