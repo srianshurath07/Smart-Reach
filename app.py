@@ -43,7 +43,7 @@ elif page == "Profile":
         if user_id:
             try:
                 response = requests.get(
-                    "https://your-backend.com/recommend",  # Replace with your actual FastAPI URL
+                    "http://127.0.0.1:8000/recommend",  # Replace with your actual FastAPI URL
                     params={"user_id": user_id}
                 )
                 if response.status_code == 200:
@@ -146,3 +146,4 @@ for i, metric in enumerate(metrics):
 
 # --- ADDITIONAL SPACING ---
 st.markdown("<br><br>", unsafe_allow_html=True)
+
