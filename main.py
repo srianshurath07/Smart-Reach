@@ -41,10 +41,16 @@ app.add_middleware(
 )
 
 
-# ✅ Add this root route here
+# root route (optional, for testing)
 @app.get("/")
 def root():
     return {"message": "Backend is running. Use /recommend?user_id=123"}
+
+# Alias endpoint for recommend
+@app.get("/recommend")
+def recommend(user_id: int):
+    return get_user(user_id)
+
 
 
 # ---------- Data loaders ----------
@@ -206,5 +212,6 @@ def reload_data():
     exist_eng = os.path.exists(ENGAGEMENT_CSV)
     exist_users = os.path.exists(USERS_JSON)
     return {"engagement_csv": exist_eng, "users_json": exist_users}
+
 
 
