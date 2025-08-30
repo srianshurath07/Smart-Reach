@@ -147,6 +147,13 @@ def get_user(user_id: int):
     ]
     return {"user": {"id": user_id, **user}, "nba": {"recommendation": rec, "explanation": explanation}}
 
+# Alias endpoint for /recommend
+@app.get("/recommend")
+def recommend(user_id: int):
+    # Forward to the existing get_user function
+    return get_user(user_id)
+
+
 @app.post("/api/generate-content")
 def generate_content(request: ContentRequest):
     prompt = request.prompt
@@ -199,4 +206,5 @@ def reload_data():
     exist_eng = os.path.exists(ENGAGEMENT_CSV)
     exist_users = os.path.exists(USERS_JSON)
     return {"engagement_csv": exist_eng, "users_json": exist_users}
+
 
