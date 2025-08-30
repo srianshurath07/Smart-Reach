@@ -43,8 +43,8 @@ elif page == "Profile":
         if user_id:
             try:
                 response = requests.get(
-                    "http://127.0.0.1:8000/recommend",  # Replace with your actual FastAPI URL
-                    params={"user_id": 101}
+                    "https://smart-reach-6.onrender.com//recommend?user_id=123",  # Replace with your actual FastAPI URL
+                    params={"user_id": 123}
                 )
                 if response.status_code == 200:
                     data = response.json()
