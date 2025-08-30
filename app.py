@@ -28,7 +28,7 @@ if page == "Dashboard":
                 <div class="card">
                     <div class="metric-label">{metric['label']}</div>
                     <div class="metric-value">{metric['value']}</div>
-                    <div style="font-size:12px; color:gray;">{metric['desc']}</div>
+                    <div style="font-size:12px; color:black;">{metric['desc']}</div>
                 </div>
                 """,
                 unsafe_allow_html=True
@@ -44,7 +44,7 @@ elif page == "Profile":
             try:
                 response = requests.get(
                     "http://127.0.0.1:8000/recommend",  # Replace with your actual FastAPI URL
-                    params={"user_id": user_id}
+                    params={"user_id": 101}
                 )
                 if response.status_code == 200:
                     data = response.json()
@@ -87,10 +87,12 @@ st.markdown(
     .metric-label {
         font-weight: bold;
         font-size: 16px;
+        font-color: #000000
     }
     .metric-value {
         font-size: 24px;
         margin-top: 0.5rem;
+        font-color: #000000
     }
     </style>
     """,
@@ -146,4 +148,5 @@ for i, metric in enumerate(metrics):
 
 # --- ADDITIONAL SPACING ---
 st.markdown("<br><br>", unsafe_allow_html=True)
+
 
